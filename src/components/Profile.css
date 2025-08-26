@@ -1,0 +1,195 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  position: relative;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e0e0e0;
+}
+
+.avatar-input {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.basic-info {
+  flex: 1;
+}
+
+.name {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.title {
+  margin: 0;
+  color: #666;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.name-input, .title-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.name-input {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.profile-content {
+  display: grid;
+  gap: 25px;
+}
+
+.contact-info, .bio-section, .skills-section, .experience-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-info h3, .bio-section h3, .skills-section h3, .experience-section h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.3em;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.contact-info input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.bio-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-item h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.company {
+  margin: 0 0 5px 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.duration {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .edit-btn {
+    position: static;
+    margin-top: 15px;
+  }
+  
+  .profile-container {
+    margin: 10px;
+    padding: 15px;
+  }
+}

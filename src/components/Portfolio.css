@@ -1,0 +1,72 @@
+.portfolio {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.sections-container {
+  height: 100vh;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 5%;
+}
+
+.arrow-nav {
+  position: fixed;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.arrow-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.arrow-up {
+  top: 30px;
+}
+
+.arrow-down {
+  bottom: 30px;
+}
+
+.arrow-nav span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .arrow-nav {
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow-nav span {
+    font-size: 16px;
+  }
+  
+  .section {
+    padding: 0 3%;
+  }
+}
